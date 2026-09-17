@@ -216,7 +216,7 @@ the product.>
 
 1. **Clone the template**
    - Run `npx create-mastra@latest --template <template-slug-or-repository-url>` to scaffold the project locally.
-   - <Include the correct directory change and dependency installation command when needed.>
+   - <Include the correct directory change when needed.>
 2. **Add your API keys**
    - Run `cp .env.example .env` and fill in the values described under Prerequisites.
 3. **<Required preparation, such as Seed the database>**
@@ -356,7 +356,6 @@ Quickstart rules:
 - Do not include a project name argument. Prefer `npx create-mastra@latest --template text-to-sql` over `npx create-mastra@latest my-company-brain --template template-surrealdb-company-brain`.
 - Ensure `cd` matches the directory actually created.
 - Detect the package manager from repository evidence and use it consistently.
-- Include dependency installation when needed.
 - Do not add a direct `git clone` alternative.
 - Include copying `.env.example` to `.env`, then refer to Prerequisites for the values.
 - Do not repeat provider descriptions or environment-variable explanations.
