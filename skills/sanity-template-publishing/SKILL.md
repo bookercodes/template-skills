@@ -12,6 +12,4 @@ Run this skill from the template's code folder so you can read the implementatio
 - **Description:** write a short, compelling summary of what the template does. Example: `A shared team memory that recalls decisions, customer details, and company knowledge across conversations, with answers grounded in saved facts and documents.`
 - **Long description:** always leave empty.
 - **Code example:** always leave empty.
-- **Agents:** list the names of the agents defined in the implementation.
-- **Tools:** list the names of the tools defined in the implementation.
 - **Use case:** choose the option that best fits the template. If none fits, choose `Other`.
