@@ -124,6 +124,8 @@ Choose the strongest title when the evidence is clear. Present a shortlist only 
 
 ### Title format
 
+Format the title in Title Case, capitalizing the first word and all major words. Keep minor words such as `with`, `and`, and `for` lowercase unless they are the first word.
+
 - **Official or community:** `# <Clear use-case or product name>`
 - **Partnership:** `# <Clear use-case or product name> with <Partner name>`
 
@@ -448,6 +450,7 @@ Prefer the repository’s own contribution guide when it matches the established
 
 - The implementation was inspected before choosing the product framing.
 - The H1 is concise, accurate, and signals a recognizable use case or task.
+- The H1 title is in Title Case.
 - Partnership titles follow `<Name> with <Partner name>`.
 - The opening explains inputs, behavior, and results.
 - Existing contributor voice, useful ideas, examples, and caveats are preserved.
