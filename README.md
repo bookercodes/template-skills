@@ -6,7 +6,7 @@ A collection of agent skills for building and publishing Mastra templates, insta
 
 - **mastra-template-readme**: Create or adapt `README.md` files for Mastra templates.
 - **mastra-code-review**: Review and improve Mastra template code for correctness, teaching clarity, and a usable first run.
-- **sanity-publishing**: Enforce title case and matching slug rules when publishing documents to Sanity.
+- **sanity-template-publishing**: Enforce title case and matching slug rules when publishing templates to Sanity.
 
 ## Installing
 
