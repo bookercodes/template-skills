@@ -215,7 +215,7 @@ the product.>
 ## Quickstart 🚀
 
 1. **Clone the template**
-   - Run `npx create-mastra@latest --template <template-slug>` to scaffold the project locally.
+   - Run `npx create-mastra@latest --template <template-slug-or-repository-url>` to scaffold the project locally.
    - <Include the correct directory change and dependency installation command when needed.>
 2. **Add your API keys**
    - Run `cp .env.example .env` and fill in the values described under Prerequisites.
@@ -350,7 +350,9 @@ Additional nested bullets are welcome when they make an action easier to follow.
 
 Quickstart rules:
 
-- Use `npx create-mastra@latest --template <template-slug>` with the correct template slug.
+- Use `npx create-mastra@latest --template <template>` with the correct template reference.
+- For official templates in the Mastra monorepo, use the template slug, such as `npx create-mastra@latest --template text-to-sql`.
+- For templates maintained in their own repository (partnership and community), use the full GitHub repository URL, such as `npx create-mastra@latest --template https://github.com/mastra-ai/template-surrealdb`.
 - Do not include a project name argument. Prefer `npx create-mastra@latest --template text-to-sql` over `npx create-mastra@latest my-company-brain --template template-surrealdb-company-brain`.
 - Ensure `cd` matches the directory actually created.
 - Detect the package manager from repository evidence and use it consistently.
