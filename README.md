@@ -10,10 +10,10 @@ A collection of agent skills for building and publishing Mastra templates, insta
 
 ## Installing
 
-Install all skills into the current project:
+Install all skills globally so they are available across all your projects:
 
 ```bash
-npx skills add bookercodes/template-skills
+npx skills add bookercodes/template-skills -g
 ```
 
 List the available skills without installing:
@@ -22,22 +22,16 @@ List the available skills without installing:
 npx skills add bookercodes/template-skills --list
 ```
 
-Install a specific skill:
+Install a specific skill globally:
 
 ```bash
-npx skills add bookercodes/template-skills --skill mastra-code-review
+npx skills add bookercodes/template-skills --skill mastra-code-review -g
 ```
 
 Target specific agents (omit to use detected agents, or use `'*'` for all):
 
 ```bash
-npx skills add bookercodes/template-skills -a cursor -a claude-code
-```
-
-Install globally to your user directory instead of the current project:
-
-```bash
-npx skills add bookercodes/template-skills -g
+npx skills add bookercodes/template-skills -g -a cursor -a claude-code
 ```
 
 ## Updating
@@ -48,14 +42,8 @@ Check whether any installed skills have upstream changes:
 npx skills check
 ```
 
-Update by re-running `add`; the lock file (`skills-lock.json`) is rewritten to match:
+Update by re-running `add` globally; the lock file is rewritten to match:
 
 ```bash
-npx skills add bookercodes/template-skills
-```
-
-Restore every skill exactly as recorded in the lock file, for teammates and CI:
-
-```bash
-npx skills experimental_install
+npx skills add bookercodes/template-skills -g
 ```
