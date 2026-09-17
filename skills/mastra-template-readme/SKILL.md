@@ -350,8 +350,8 @@ Additional nested bullets are welcome when they make an action easier to follow.
 
 Quickstart rules:
 
-- Use `npx create-mastra@latest` with the correct template slug.
-- Include an explicit project name when needed to make the destination directory clear.
+- Use `npx create-mastra@latest --template <template-slug>` with the correct template slug.
+- Do not include a project name argument. Prefer `npx create-mastra@latest --template text-to-sql` over `npx create-mastra@latest my-company-brain --template template-surrealdb-company-brain`.
 - Ensure `cd` matches the directory actually created.
 - Detect the package manager from repository evidence and use it consistently.
 - Include dependency installation when needed.
