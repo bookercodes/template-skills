@@ -245,8 +245,6 @@ the product.>
 ## About Mastra templates
 
 <Category-specific description and attribution.>
-
-[Want to contribute?](<verified contribution URL>)
 ```
 
 Replace placeholders with verified project details. Do not include an empty additional section or unnecessary preparation step. Omit the Demo section entirely when no demo video is available.
@@ -409,8 +407,6 @@ Use the appropriate pattern below, adapting it to verified facts.
 This is an official Mastra template. Official templates live in the
 [Mastra monorepo](<verified URL>) and are synchronized to standalone
 repositories.
-
-[Want to contribute?](<verified templates contributing guide>)
 ```
 
 Include the synchronization statement only when confirmed by contribution documentation.
@@ -422,8 +418,6 @@ Include the synchronization statement only when confirmed by contribution docume
 
 This partnership template was contributed by <partner> to show how
 Mastra works with <product or service> for <concrete use case>.
-
-[Want to contribute?](<partner contribution guide or canonical repository>)
 ```
 
 **Community:**
@@ -434,8 +428,6 @@ Mastra works with <product or service> for <concrete use case>.
 This community template was contributed by <person or organization>
 to show how Mastra can <concrete use case, including relevant tools
 or integrations>. Community templates live in their own repositories.
-
-[Want to contribute?](<community contribution guide or canonical repository>)
 ```
 
 For partnership and community templates, explain the practical ecosystem connection: what users can do with Mastra and the tools involved. Prefer a specific integration or outcome over a generic claim about the “broader ecosystem.”
@@ -443,8 +435,6 @@ For partnership and community templates, explain the practical ecosystem connect
 Keep attribution factual. Do not advertise the contributor or partner.
 
 Do not describe community contributors as partners without an established relationship. Do not direct independently maintained templates to the Mastra monorepo for contributions.
-
-Prefer the repository’s own contribution guide when it matches the established category and actual maintenance destination. If it contains conflicting monorepo boilerplate, link the canonical partner or community repository instead. Do not carry that boilerplate into the About section or block the README update on it. Editing the contribution guide itself is a separate scope decision.
 
 ## Final check
 
@@ -478,7 +468,6 @@ Prefer the repository’s own contribution guide when it matches the established
 - Useful additional sections sit after Customization and before About Mastra templates.
 - The template category and contributor follow established conversation and project context; copied contribution boilerplate has not overridden them.
 - Monorepo language appears only for official templates.
-- Contribution links point to where the template is maintained.
 - About Mastra templates is the final H2 section.
 - Marketing language is absent throughout, including attribution and preserved additional sections.
 - Markdown lists and indentation render correctly.
