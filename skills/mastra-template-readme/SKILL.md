@@ -94,7 +94,7 @@ Retain useful contributor-added sections that do not fit naturally inside the re
 
 Move them toward the bottom, after Customization and immediately before About Mastra templates. Preserve their H2 headings and relative order when practical.
 
-Examples include detailed integration explanations, deployment instructions, troubleshooting, and project-specific design decisions. The required Demo section is not a contributor-added section and must remain directly after Why we built this.
+Examples include detailed integration explanations, deployment instructions, troubleshooting, and project-specific design decisions. The Demo section, when present, is not a contributor-added section and must remain directly after Why we built this.
 
 Keep information essential to the first successful run in Prerequisites or Quickstart. Do not bury required setup in a relocated section.
 
@@ -179,7 +179,7 @@ Use this order unless the user explicitly requests otherwise:
 
 1. H1 title and opening paragraph.
 2. Why we built this.
-3. Demo.
+3. Demo, when a demo video is available.
 4. Prerequisites.
 5. Quickstart.
 6. Try it out.
@@ -247,7 +247,7 @@ the product.>
 [Want to contribute?](<verified contribution URL>)
 ```
 
-Replace placeholders with verified project details. Do not include an empty additional section or unnecessary preparation step.
+Replace placeholders with verified project details. Do not include an empty additional section or unnecessary preparation step. Omit the Demo section entirely when no demo video is available.
 
 ## Section rules
 
@@ -267,7 +267,7 @@ Preserve an existing contributor’s motivation where supported. Do not turn the
 
 ### Demo
 
-Use the exact heading `## Demo` immediately after `## Why we built this` and before `## Prerequisites`.
+Include the Demo section only when a demo video is available. When present, use the exact heading `## Demo` immediately after `## Why we built this` and before `## Prerequisites`.
 
 Embed the demo with an HTML `video` tag using fixed dimensions and playback controls:
 
@@ -277,15 +277,7 @@ Embed the demo with an HTML `video` tag using fixed dimensions and playback cont
 
 Use the Cloudinary video URL supplied by the user or verified in the repository. Do not substitute another video host.
 
-When no video URL is supplied or available in the repository, ask the user for the Cloudinary URL when practical. If the README must be drafted or updated before the URL is available, retain the section and use this blatant placeholder:
-
-```html
-<!-- TODO: REPLACE THIS PLACEHOLDER WITH THE CLOUDINARY DEMO VIDEO URL -->
-
-<video controls width="640" height="360" src="CLOUDINARY_DEMO_VIDEO_URL_REQUIRED"></video>
-```
-
-Do not omit the Demo section, silently reuse a video from an unrelated template, guess a Cloudinary URL, or hide the missing video behind subtle placeholder text.
+When no video is available, omit the Demo section entirely, including its `## Demo` heading. Do not add a placeholder, silently reuse a video from an unrelated template, or guess a Cloudinary URL. When a demo is expected but the URL is not yet available, ask the user for the Cloudinary URL when practical rather than leaving a placeholder.
 
 ### Prerequisites
 
@@ -461,9 +453,9 @@ Prefer the repository’s own contribution guide when it matches the established
 - Existing contributor voice, useful ideas, examples, and caveats are preserved.
 - Section titles use headings, never bold list items.
 - Ordinary paragraphs are not indented.
-- `## Demo` appears directly after `## Why we built this`.
-- The Demo section uses a `video` tag with `controls`, `width="640"`, `height="360"`, and a verified Cloudinary URL.
-- If no demo URL is available, the Demo section contains the blatant required placeholder.
+- When a demo video is available, `## Demo` appears directly after `## Why we built this`; otherwise the section is omitted.
+- When present, the Demo section uses a `video` tag with `controls`, `width="640"`, `height="360"`, and a verified Cloudinary URL.
+- When no demo video is available, the Demo section and its heading are omitted, with no placeholder left behind.
 - Prerequisites is an H2 immediately before `## Quickstart 🚀`.
 - Credential and service labels link to verified access pages and are followed by colons.
 - The README contains no em dashes.
