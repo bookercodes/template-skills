@@ -419,7 +419,6 @@ Include the synchronization statement only when confirmed by contribution docume
 
 This partnership template was contributed by <partner> to show how
 Mastra works with <product or service> for <concrete use case>.
-Partnership templates live in their own repositories.
 
 [Want to contribute?](<partner contribution guide or canonical repository>)
 ```
