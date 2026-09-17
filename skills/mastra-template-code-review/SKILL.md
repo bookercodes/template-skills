@@ -1,9 +1,9 @@
 ---
-name: mastra-code-review
+name: mastra-template-code-review
 description: Review and improve Mastra template code for correctness, teaching clarity, and a usable first run. Excludes README editing.
 ---
 
-# Mastra code review
+# Mastra template code review
 
 Review implementation, configuration, and environment examples. Apply fixes when requested. Another skill handles README work.
 

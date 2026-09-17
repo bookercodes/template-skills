@@ -5,7 +5,7 @@ A collection of agent skills for building and publishing Mastra templates, insta
 ## Skills
 
 - **mastra-template-readme**: Create or adapt `README.md` files for Mastra templates.
-- **mastra-code-review**: Review and improve Mastra template code for correctness, teaching clarity, and a usable first run.
+- **mastra-template-code-review**: Review and improve Mastra template code for correctness, teaching clarity, and a usable first run.
 - **sanity-template-publishing**: Enforce title case and matching slug rules when publishing templates to Sanity.
 
 ## Installing
@@ -25,7 +25,7 @@ npx skills add bookercodes/template-skills --list
 Install a specific skill globally:
 
 ```bash
-npx skills add bookercodes/template-skills --skill mastra-code-review -g
+npx skills add bookercodes/template-skills --skill mastra-template-code-review -g
 ```
 
 Target specific agents (omit to use detected agents, or use `'*'` for all):
