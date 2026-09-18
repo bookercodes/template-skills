@@ -1,12 +1,13 @@
 # template-skills
 
-A collection of agent skills for building and publishing Mastra templates, installable with the [skills.sh](https://skills.sh/) CLI.
+A collection of agent skills, installable with the [skills.sh](https://skills.sh/) CLI.
 
 ## Skills
 
 - **mastra-template-readme**: Create or adapt `README.md` files for Mastra templates.
 - **mastra-template-code-review**: Review and improve Mastra template code for correctness, teaching clarity, and a usable first run.
 - **sanity-template-publishing**: Enforce title case and matching slug rules when publishing templates to Sanity.
+- **workshop-description-writer**: Write titles and event-page descriptions for Mastra workshops.
 
 ## Installing
 
