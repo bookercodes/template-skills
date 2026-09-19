@@ -31,7 +31,7 @@ Write a substantial, compelling online event description. Open with a concrete b
 
 ## Voice
 
-Write for builders: developers, technical founders, and product engineers who ship agents. Be practical, technically confident, direct, and focused on what they can build or improve now and as the industry changes. Avoid hyperbole and weak value claims built around "let." Assume they understand agents and code but not the specific Mastra feature. Say "agent," not "AI agent," unless accuracy requires it. Do not use em dashes.
+Write for builders: developers, technical founders, and product engineers who ship agents. Be practical, technically confident, direct, and focused on what they can build or improve now and as the industry changes. Avoid hyperbole and weak value claims built around "let." Assume they understand agents and code but not the specific Mastra feature. Say "agent," not "AI agent," unless accuracy requires it. The first time you use a term with a common acronym, write the full term followed by the acronym in parentheses, then use the acronym afterward, for example fine-grained authorization (FGA). Do not use em dashes.
 
 ## Output
 

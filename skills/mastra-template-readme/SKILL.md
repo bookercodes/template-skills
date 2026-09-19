@@ -143,6 +143,7 @@ Do not add “AI,” “agent,” “template,” or “Mastra” merely as deco
 - Avoid em dashes. Use a colon to introduce an explanation, or use a comma, parentheses, or a separate sentence as appropriate. In Prerequisites, follow each linked bold credential label with a colon.
 - Write for engineers and technical product managers evaluating whether to try the template.
 - Explain inputs, behavior, and useful results before implementation details.
+- Define an acronym on first use: write the full term followed by the acronym in parentheses, then use the acronym afterward, for example fine-grained authorization (FGA).
 - Use factual, concrete language throughout, including partnership attribution and contributor-added sections.
 - Avoid marketing language: promotional adjectives, superlatives, vague benefits, and unsupported claims.
 - Avoid phrases such as “powerful,” “seamless,” “cutting-edge,” “revolutionary,” “unlocks,” and “showcases the power of AI.”
