@@ -229,7 +229,7 @@ the product.>
 3. **<Required preparation, such as Seed the database>**
    - Run `<actual preparation command>` to <brief purpose>.
 4. **Start the dev server**
-   - Run `<package-manager> run dev`.
+   - Run `npm run dev`.
    - Open [Mastra Studio](http://localhost:4111), select **<agent or workflow>**, and <exact first action>. <Expected result.>
 
 ## Try it out
@@ -364,7 +364,7 @@ Quickstart rules:
 - For templates maintained in their own repository (partnership and community), use the full GitHub repository URL, such as `npx create-mastra@latest --template https://github.com/mastra-ai/template-surrealdb`.
 - Do not include a project name argument. Prefer `npx create-mastra@latest --template text-to-sql` over `npx create-mastra@latest my-company-brain --template template-surrealdb-company-brain`.
 - Ensure `cd` matches the directory actually created.
-- Detect the package manager from repository evidence and use it consistently.
+- Favor npm over bun, pnpm, and yarn, and generally use the most accessible tool. Use another package manager only when the template requires it, and then use it consistently.
 - Favor the template's TypeScript and Node commands. Do not use Python commands unless the template itself requires Python.
 - Do not add a direct `git clone` alternative.
 - Include copying `.env.example` to `.env`, then refer to Prerequisites for the values.
@@ -474,6 +474,7 @@ Do not describe community contributors as partners without an established relati
 - The number of steps follows the project’s needs rather than a fixed limit.
 - Commands, slug, destination directory, variables, and Studio names match the project.
 - Commands favor TypeScript and Node, not Python.
+- Commands favor npm and the most accessible tooling, unless the template requires otherwise.
 - Quickstart refers to Prerequisites rather than repeating credential explanations.
 - There is no direct-clone alternative.
 - The first interaction includes a supported expected result.
