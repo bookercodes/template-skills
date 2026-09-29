@@ -142,7 +142,7 @@ Do not add “AI,” “agent,” “template,” or “Mastra” merely as deco
 
 ## Writing principles
 
-- Avoid em dashes. Use a colon to introduce an explanation, or use a comma, parentheses, or a separate sentence as appropriate. In Prerequisites, follow each linked bold credential label with a colon.
+- Avoid em dashes. Use a colon to introduce an explanation, or use a comma, parentheses, or a separate sentence as appropriate. In Prerequisites, separate a link from its explanation with a hyphen.
 - Write for engineers and technical product managers evaluating whether to try the template.
 - Explain inputs, behavior, and useful results before implementation details.
 - Define an acronym on first use: write the full term followed by the acronym in parentheses, then use the acronym afterward, for example fine-grained authorization (FGA).
@@ -216,9 +216,9 @@ the product.>
 
 ## Prerequisites
 
-- **[<Model provider> API key](<verified credential URL>)**: `<ENV_VARIABLE>`, the credential that authenticates the default model.
-- **[<Service> credentials](<verified access URL>)**: `<ENV_VARIABLE>`, <what the service provides>.
-- <Additional concise configuration or access details needed for the first run.>
+- [<Model provider> key](<verified credential URL>)
+- [<Service or tool>](<verified access URL>) - <what it is or why it is needed, when not obvious>
+- <Additional concise access detail needed for the first run.>
 
 ## Quickstart 🚀
 
@@ -295,17 +295,14 @@ Explain required credentials, external services, environment variables, and rele
 
 Use concise bullets. Group related variables by provider or service rather than creating an exhaustive reference table.
 
-Describe what each value is, not what to do with it. Name the environment variable and explain what it represents. Do not write imperative instructions such as "set `<VARIABLE>`"; Quickstart already covers copying `.env.example` to `.env`.
+Make each item a clickable link to where users can obtain access. Do not use bold. Add a short explanation after a hyphen only when the purpose is not obvious; omit it when the item speaks for itself. Do not write imperative instructions such as "set `<VARIABLE>`"; Quickstart already covers copying `.env.example` to `.env`.
 
-Make the bold credential or service label before the colon a clickable link to where users can obtain access:
+- [OpenAI key](<verified credential URL>)
+- [uv](<verified access URL>) - Python package manager used to install the Arcade CLI, which deploys this example's Python tools.
 
-- **[<Model provider> API key](<verified credential URL>)**: `<API_KEY_VARIABLE>`, the credential for the default model.
-- **[<Service> credentials](<verified access URL>)**: `<ENDPOINT_VARIABLE>`, `<CONTEXT_VARIABLE>`, and `<API_KEY_VARIABLE>`, the connection details from the service.
+Include, when relevant:
 
-Include:
-
-- The exact environment-variable names needed for the first run.
-- What each value represents and where it comes from.
+- A short explanation after a hyphen for anything whose purpose is not obvious, including where the value comes from.
 - Required account configuration, such as model access, permissions, or a service region.
 - Relevant defaults or optional overrides when they materially affect setup.
 
@@ -462,14 +459,14 @@ Do not describe community contributors as partners without an established relati
 - When present, the Demo section uses a `video` tag with `controls`, `width="640"`, `height="360"`, and a verified Cloudinary URL.
 - When no demo video is available, the Demo section and its heading are omitted, with no placeholder left behind.
 - Prerequisites is an H2 immediately before `## Quickstart 🚀`.
-- Credential and service labels link to verified access pages and are followed by colons.
+- Prerequisites are plain links (not bold) to verified access pages, with an explanation after a hyphen only when the purpose is not obvious.
 - The README contains no em dashes.
 - The README contains no header, banner, or hero image; it starts with the H1 title.
 - The README contains no legal disclaimers.
 - Links to the template's own repository files use absolute GitHub URLs, not relative paths, when the repository is known.
 - Ambiguous access URLs were resolved with the user rather than guessed.
-- Required environment variables and their meanings are explained in Prerequisites.
-- Prerequisites describe what each value is and do not use imperative instructions such as "set".
+- Obvious prerequisites carry no explanation; non-obvious ones add a concise hyphenated note.
+- Prerequisites do not use imperative instructions such as "set".
 - Runtime and package-manager version requirements are omitted from the README.
 - Quickstart uses numbered steps with bold labels and concise nested bullets.
 - Required preparation has its own step when it is a distinct action.
