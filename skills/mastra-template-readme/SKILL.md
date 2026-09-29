@@ -215,8 +215,8 @@ the product.>
 
 ## Prerequisites
 
-- **[<Model provider> API key](<verified credential URL>)**: set `<ENV_VARIABLE>` to authenticate the default model.
-- **[<Service> credentials](<verified access URL>)**: <what the service provides>. Set `<ENV_VARIABLE>` to <required value>.
+- **[<Model provider> API key](<verified credential URL>)**: `<ENV_VARIABLE>`, the credential that authenticates the default model.
+- **[<Service> credentials](<verified access URL>)**: `<ENV_VARIABLE>`, <what the service provides>.
 - <Additional concise configuration or access details needed for the first run.>
 
 ## Quickstart 🚀
@@ -294,10 +294,12 @@ Explain required credentials, external services, environment variables, and rele
 
 Use concise bullets. Group related variables by provider or service rather than creating an exhaustive reference table.
 
+Describe what each value is, not what to do with it. Name the environment variable and explain what it represents. Do not write imperative instructions such as "set `<VARIABLE>`"; Quickstart already covers copying `.env.example` to `.env`.
+
 Make the bold credential or service label before the colon a clickable link to where users can obtain access:
 
-- **[<Model provider> API key](<verified credential URL>)**: set `<API_KEY_VARIABLE>` for the default model.
-- **[<Service> credentials](<verified access URL>)**: set `<ENDPOINT_VARIABLE>`, `<CONTEXT_VARIABLE>`, and `<API_KEY_VARIABLE>` using the values supplied by the service.
+- **[<Model provider> API key](<verified credential URL>)**: `<API_KEY_VARIABLE>`, the credential for the default model.
+- **[<Service> credentials](<verified access URL>)**: `<ENDPOINT_VARIABLE>`, `<CONTEXT_VARIABLE>`, and `<API_KEY_VARIABLE>`, the connection details from the service.
 
 Include:
 
@@ -363,6 +365,7 @@ Quickstart rules:
 - Do not include a project name argument. Prefer `npx create-mastra@latest --template text-to-sql` over `npx create-mastra@latest my-company-brain --template template-surrealdb-company-brain`.
 - Ensure `cd` matches the directory actually created.
 - Detect the package manager from repository evidence and use it consistently.
+- Favor the template's TypeScript and Node commands. Do not use Python commands unless the template itself requires Python.
 - Do not add a direct `git clone` alternative.
 - Include copying `.env.example` to `.env`, then refer to Prerequisites for the values.
 - Do not repeat provider descriptions or environment-variable explanations.
@@ -464,11 +467,13 @@ Do not describe community contributors as partners without an established relati
 - The README contains no legal disclaimers.
 - Ambiguous access URLs were resolved with the user rather than guessed.
 - Required environment variables and their meanings are explained in Prerequisites.
+- Prerequisites describe what each value is and do not use imperative instructions such as "set".
 - Runtime and package-manager version requirements are omitted from the README.
 - Quickstart uses numbered steps with bold labels and concise nested bullets.
 - Required preparation has its own step when it is a distinct action.
 - The number of steps follows the project’s needs rather than a fixed limit.
 - Commands, slug, destination directory, variables, and Studio names match the project.
+- Commands favor TypeScript and Node, not Python.
 - Quickstart refers to Prerequisites rather than repeating credential explanations.
 - There is no direct-clone alternative.
 - The first interaction includes a supported expected result.
@@ -481,3 +486,17 @@ Do not describe community contributors as partners without an established relati
 - About Mastra templates is the final H2 section.
 - Marketing language is absent throughout, including attribution and preserved additional sections.
 - Markdown lists and indentation render correctly.
+
+## Final read-through
+
+After the checklist passes, read the whole README once more as a first-time reader, top to bottom, and fix anything that would confuse or mislead them.
+
+Look for internal inconsistencies and mismatches against the implementation, for example:
+
+- Counts that do not match, such as "these three variables" when there are five.
+- References to a section, file, command, agent, workflow, or variable that does not exist or is named differently elsewhere.
+- Steps that assume something introduced later, or an order that does not match how the project actually runs.
+- Claims, inputs, or expected results that the implementation does not support.
+- Links, slugs, or commands that do not resolve to the real target.
+
+Resolve every issue you find, then confirm the README reads as one coherent, accurate walkthrough.
