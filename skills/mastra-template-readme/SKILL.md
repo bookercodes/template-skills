@@ -108,6 +108,8 @@ About Mastra templates remains the final section.
 
 Choose the H1 after understanding the implementation.
 
+Every README must have a strong H1. Do not use the repository name, a generic label such as `Template`, `Mastra Template`, or `Example`, or a leftover placeholder as the title.
+
 The title should be concise, clear, and recognizable. It should signal what the template helps someone do without relying on the opening paragraph to explain the name.
 
 Prefer a familiar use-case name when accurate, such as “Deep Search,” “Customer Support,” or “Meeting Notes.” Do not force the project into a familiar category that misrepresents its behavior.
@@ -155,6 +157,7 @@ Do not add “AI,” “agent,” “template,” or “Mastra” merely as deco
 - Keep ordinary paragraphs short.
 - Explain architecture only when it helps users configure, operate, or adapt the project.
 - Do not invent motivation, customer anecdotes, credentials, integrations, or outcomes.
+- Do not include legal disclaimers, such as affiliation, liability, warranty, or terms-of-use notices. Leave that text out of the template README.
 
 Preserving contributor voice does not require preserving hype. Prefer “uses <service> to search company documents” over “unlocks powerful knowledge discovery.”
 
@@ -444,6 +447,7 @@ Do not describe community contributors as partners without an established relati
 
 - The implementation was inspected before choosing the product framing.
 - The H1 is concise, accurate, and signals a recognizable use case or task.
+- The H1 is a strong title, not the repository name, a generic label, or a placeholder.
 - The H1 title is in Title Case.
 - Partnership titles follow `<Name> with <Partner name>`.
 - The opening explains inputs, behavior, and results.
@@ -457,6 +461,7 @@ Do not describe community contributors as partners without an established relati
 - Credential and service labels link to verified access pages and are followed by colons.
 - The README contains no em dashes.
 - The README contains no header, banner, or hero image; it starts with the H1 title.
+- The README contains no legal disclaimers.
 - Ambiguous access URLs were resolved with the user rather than guessed.
 - Required environment variables and their meanings are explained in Prerequisites.
 - Runtime and package-manager version requirements are omitted from the README.
