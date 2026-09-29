@@ -173,6 +173,7 @@ Use standard Markdown headings for sections. Never use a bold bullet such as `- 
 - Avoid standalone “Run:” paragraphs and fenced command blocks when a concise instruction bullet is sufficient.
 - Use code blocks when genuinely needed for multiline content or syntax that would be difficult to read inline.
 - Do not add emoji beyond the rocket in the Quickstart heading.
+- Do not embed a header, banner, or hero image. The CMS renders the header, so the README content must not include one.
 
 The preference for bullets applies to content that is naturally a list. It does not apply to section titles or ordinary paragraphs.
 
@@ -255,6 +256,8 @@ Replace placeholders with verified project details. Do not include an empty addi
 ### Opening
 
 The opening must stand alone. Explain what goes in, what the product does, and what comes out.
+
+Start the README with the H1 title. Do not place a header, banner, or hero image above or below it; the CMS renders the header.
 
 Make the use case clear enough for readers to evaluate the project before reaching the examples.
 
@@ -453,6 +456,7 @@ Do not describe community contributors as partners without an established relati
 - Prerequisites is an H2 immediately before `## Quickstart 🚀`.
 - Credential and service labels link to verified access pages and are followed by colons.
 - The README contains no em dashes.
+- The README contains no header, banner, or hero image; it starts with the H1 title.
 - Ambiguous access URLs were resolved with the user rather than guessed.
 - Required environment variables and their meanings are explained in Prerequisites.
 - Runtime and package-manager version requirements are omitted from the README.
