@@ -94,6 +94,17 @@ Retain useful contributor-added sections that do not fit naturally inside the re
 
 Move them toward the bottom, after Customization and immediately before About Mastra templates. Preserve their H2 headings and relative order when practical.
 
+When a section lists links to the template's documentation, title it `## Documentation` rather than `Further reading` or a similar name. Format its entries like Prerequisites: plain links (not bold), each followed by a short explanation after a hyphen only when the purpose is not obvious, and absolute GitHub URLs for repository files. For example:
+
+```markdown
+## Documentation
+
+- [Setup and walkthrough](<github url>) - web chat, the audit panel, and additional users.
+- [Configuration](<github url>) - environment settings and resetting the demo.
+- [Architecture](<github url>) - tools, policies, and identity.
+- [FAQ](<github url>) and [deployment](<github url>) - troubleshooting and hosting.
+```
+
 Examples include detailed integration explanations, deployment instructions, troubleshooting, and project-specific design decisions. The Demo section, when present, is not a contributor-added section and must remain directly after Why we built this.
 
 Keep information essential to the first successful run in Prerequisites or Quickstart. Do not bury required setup in a relocated section.
@@ -481,6 +492,7 @@ Do not describe community contributors as partners without an established relati
 - There is no separate Features section.
 - The first customization bullet introduces planning changes with a coding agent.
 - Useful additional sections sit after Customization and before About Mastra templates.
+- A documentation links section is titled `Documentation`, not `Further reading`, and uses the plain-link, hyphen format.
 - The template category and contributor follow established conversation and project context; copied contribution boilerplate has not overridden them.
 - Monorepo language appears only for official templates.
 - About Mastra templates is the final H2 section.
