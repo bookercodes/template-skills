@@ -177,6 +177,7 @@ Use standard Markdown headings for sections. Never use a bold bullet such as `- 
 - Use code blocks when genuinely needed for multiline content or syntax that would be difficult to read inline.
 - Do not add emoji beyond the rocket in the Quickstart heading.
 - Do not embed a header, banner, or hero image. The CMS renders the header, so the README content must not include one.
+- Link to files in the template's own repository, such as docs and guides, with absolute GitHub URLs like `https://github.com/<owner>/<repo>/blob/<default-branch>/docs/setup.md`, not relative paths like `./docs/setup.md`. The README is embedded on the template website, where relative repository links break. If the repository's GitHub URL is unknown, skip this and leave the link as is. Leave external links, such as official docs and provider pages, unchanged.
 
 The preference for bullets applies to content that is naturally a list. It does not apply to section titles or ordinary paragraphs.
 
@@ -465,6 +466,7 @@ Do not describe community contributors as partners without an established relati
 - The README contains no em dashes.
 - The README contains no header, banner, or hero image; it starts with the H1 title.
 - The README contains no legal disclaimers.
+- Links to the template's own repository files use absolute GitHub URLs, not relative paths, when the repository is known.
 - Ambiguous access URLs were resolved with the user rather than guessed.
 - Required environment variables and their meanings are explained in Prerequisites.
 - Prerequisites describe what each value is and do not use imperative instructions such as "set".
