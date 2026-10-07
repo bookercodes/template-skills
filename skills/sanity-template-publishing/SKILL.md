@@ -13,3 +13,4 @@ Run this skill from the template's code folder so you can read the implementatio
 - **Long description:** always leave empty.
 - **Code example:** always leave empty.
 - **Use case:** choose the option that best fits the template. If none fits, choose `Other`.
+- **Category:** read the README, mainly its About Mastra templates section, to determine whether the template is official, partner, or community, and set the category accordingly.
