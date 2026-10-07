@@ -52,7 +52,7 @@ Determine the category from repository evidence and confirmed user context:
 
 - **Official:** maintained as an official template in the Mastra monorepo. A standalone repository may be a synchronized distribution.
 - **Partnership:** contributed through an identified partnership to show how Mastra works with the partner’s product or service. Maintained in its own repository.
-- **Community:** contributed independently by a person or organization. Maintained in its own repository.
+- **Community:** contributed independently by a company or organization. Maintained in its own repository.
 
 Use the conversation and project framing together to establish the category. A user-confirmed partnership is sufficient; do not ask them to confirm it again. A title using the partnership format (`<Use case> with <Partner>`) is a meaningful signal when it is consistent with the integration and contributor context. Do not require an additional formal declaration when that context already makes the category clear. A dependency or company-owned repository alone is not enough.
 
@@ -444,12 +444,14 @@ Mastra works with <product or service> for <concrete use case>.
 ```markdown
 ## About Mastra templates
 
-This community template was contributed by <person or organization>
+This community template was contributed by <company or organization>
 to show how Mastra can <concrete use case, including relevant tools
 or integrations>. Community templates live in their own repositories.
 ```
 
 For partnership and community templates, explain the practical ecosystem connection: what users can do with Mastra and the tools involved. Prefer a specific integration or outcome over a generic claim about the “broader ecosystem.”
+
+When mentioning that the template was contributed, always name the company or organization, not the individual who wrote it.
 
 Keep attribution factual. Do not advertise the contributor or partner.
 
@@ -494,6 +496,7 @@ Do not describe community contributors as partners without an established relati
 - Useful additional sections sit after Customization and before About Mastra templates.
 - A documentation links section is titled `Documentation`, not `Further reading`, and uses the plain-link, hyphen format.
 - The template category and contributor follow established conversation and project context; copied contribution boilerplate has not overridden them.
+- Contribution attribution names the company or organization, not the individual author.
 - Monorepo language appears only for official templates.
 - About Mastra templates is the final H2 section.
 - Marketing language is absent throughout, including attribution and preserved additional sections.
